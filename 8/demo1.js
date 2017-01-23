@@ -10,17 +10,24 @@ function box(obj) {
 
     if (obj.height != undefined)
         alert(obj.height);
-    
+
     if (obj.love != undefined) {
         alert(obj.love);
     }
 }
-var obj = {            //对象
+// var obj = {            //对象
+//     name: "赵雪",
+//     age: 34,
+//     height: 160,
+//     addres: "南长街"
+//
+// };
+
+box({         //匿名对象
     name: "赵雪",
     age: 34,
     height: 160,
     addres: "南长街"
 
-};
 
-box(obj);
+});
