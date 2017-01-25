@@ -5,7 +5,6 @@
 function box(sum, num) {
     return sum(num);
 }
-
 function sum(num) {
     return num + 10;
 }
