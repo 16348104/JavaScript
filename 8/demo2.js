@@ -1,6 +1,4 @@
-/**
- * Created by xyzhang on 2017/1/23.
- */
+
 var box = [
     {
         name: "zhaoxue",
@@ -12,5 +10,4 @@ var box = [
     new Array(1, 2, 3)
 ];
 alert(box);
-
 alert(box[0].name);
