@@ -19,7 +19,7 @@ var p = new Object();
 box(p);
 // var p = new Object();
 // p.name = 'k';
-alert(p.name);                     //ECMAscript函数的参数都是局部变量，没有按引用传递
+alert(p.name);                      //ECMAscript函数的参数都是局部变量，没有按引用传递
 */
 
 var p = [1, 2, 3];
