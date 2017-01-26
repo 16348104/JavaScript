@@ -8,5 +8,6 @@ function box(sum, num) {
 function sum(num) {
     return num + 10;
 }
+
 var r = box(sum, 10);
 alert(r);
