@@ -5,7 +5,6 @@
  }
  alert(window.box);
  alert(window.setbox());*/
-
 /*
  if (true) {
  var b = 'Lee';                  //if没有局部作用域
