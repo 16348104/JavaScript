@@ -28,7 +28,6 @@
  */
 var box = 'lee';
 function setBox() {
-
     function setColor() {
         var p = 'zhao';
         alert(p);
