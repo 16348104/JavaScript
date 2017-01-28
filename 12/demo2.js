@@ -10,7 +10,6 @@
  var b = 'Lee';                  //if没有局部作用域
  }
  alert(b);
-
  for (var i=0;i<10;i++) {
  var p = 'zhao';                 //for没有局部作用域
  }
