@@ -25,6 +25,7 @@
  }
  alert(getbox());
  */
+
 var box = 'lee';
 function setBox() {
     function setColor() {
