@@ -3,6 +3,6 @@ function select(start, end) {
     return Math.floor(Math.random() * total + start);
 }
 for (var i = 0; i < 10; i++) {
-    document.write(select(5, 10));     //5~10之间的随机数
+    document.write(select(5, 10));     //5-10之间的随机数
     document.write('<br>');
 }
