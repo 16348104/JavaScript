@@ -33,7 +33,7 @@ function box() {                 //通过闭包返回局部变量
     };
 }
 // alert(box()());
-var b = box();                  //另一种调用匿名函数的方式
+/*var b = box();                  //另一种调用匿名函数的方式
 alert(b());
 
 
@@ -45,7 +45,23 @@ alert(age);
 b();
 alert(age);
 b();
-alert(age);
+alert(age);*/
+
+//使用匿名函数实现局部变量驻留内存中从而累加
+function box() {
+    var age = 100;
+    return function () {
+        age++;
+        return age;
+    };
+}
+var b = box();
+alert(b());
+alert(b());
+alert(b());
+alert(b());
+alert(b());
+
 
 
 
