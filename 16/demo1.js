@@ -37,7 +37,7 @@ function box() {                 //通过闭包返回局部变量
 alert(b());
 
 
-var age = 100;                   //使用全局变量累加
+var age = 100;                   //使用全局变量累加，使用局部变量不能实现累加
 function b() {
     age++;
 }
@@ -47,7 +47,7 @@ alert(age);
 b();
 alert(age);*/
 
-//使用匿名函数实现局部变量驻留内存中从而累加
+//使用闭包从而累加
 function box() {
     var age = 100;
     return function () {
