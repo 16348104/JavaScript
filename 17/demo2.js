@@ -15,7 +15,7 @@ if (typeof width !== 'number') {
     if (document.compatMode == 'CSS1Compat') {                             //返回CSS1Compat为标准摸式
         width = document.documentElement.clientWidth;
         height = document.documentElement.clientHeight;
-    } else {                                                            //非标准模式采用body
+    } else {                                                              //非标准模式采用body
         width = document.body.clientWidth;
         height = document.body.clientHeight;
     }
