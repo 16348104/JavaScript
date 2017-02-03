@@ -13,8 +13,16 @@
  setInterval(function () {
  alert('lee');
  },1000);*/
-
+// alert(history.length);
+function back(){
+    history.back();
+}
+function forward() {
+    history.forward()
+}
+alert(forward());
 //使用超时调用模拟定时器
+/*
 var num=0;
 var max = 5;
 function b() {
@@ -27,3 +35,4 @@ function b() {
     }
 }
 setTimeout(b, 1000);
+*/
