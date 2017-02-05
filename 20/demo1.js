@@ -20,5 +20,8 @@ window.onload = function () {
     // alert(box.children.length);
     var box= document.getElementById('box');
     alert(box.contains(box.firstChild));
+    alert(box.compareDocumentPosition(box.firstChild));
+
+
 
 };
