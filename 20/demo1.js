@@ -18,8 +18,8 @@ window.onload = function () {
     document.getElementById('li').scrollIntoView();
     // var box= document.getElementById('d');
     // alert(box.children.length);
-    var box= document.getElementById('box');
-    alert(box.contains(box.firstChild));
+    var box= document.getElementById('li');
+    alert(box.contains(box.firstChild));                  //判断一个节点是不是另一个节点的后代，我们可以使用contains()方法
     alert(box.compareDocumentPosition(box.firstChild));
 
 
