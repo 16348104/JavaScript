@@ -15,7 +15,7 @@ window.onload = function () {
     box.normalize();
    */
     // alert(box.childNodes.length);
-    document.getElementById('li').scrollIntoView();
+    document.getElementById('li').scrollIntoView();      //设置指定可见
     // var box= document.getElementById('d');
     // alert(box.children.length);
     var box= document.getElementById('li');
