@@ -19,6 +19,8 @@ function removeEvent(obj,type,fn) {
     }
 }
 addEvent(window, 'load', function () {
-    var fm = document.getElementById('myform');
+    // var fm = document.getElementById('myform');
+    var fm = document.getElementsByTagName('form')[0];
     alert(fm);
+
 });
