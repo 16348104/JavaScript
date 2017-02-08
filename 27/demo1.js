@@ -25,11 +25,21 @@ function removeEvent(obj,type,fn) {
  alert(fm);
 
  });*/
+
+function addEvent(obj,type,fn) {
+    if (obj.addEventListener) {
+        obj.addEventListener(type, fn,false);
+    } else if(obj.attachEvent) {
+        obj.attachEvent('on' + type, fn);
+    }
+    
+}
+
 addEvent(window, 'load', function () {
     var fm = document.getElementById('myform');
     var city = fm.elements['city'];
-    var info = fm.elements['into'];
+    var info = fm.elements['info'];
     addEvent(city, 'click', function () {
-        info.appendChild(this.options[city.selectedIndexindex]);
+        info.appendChild(this.options[city.selectedIndex]);
     });
 });
