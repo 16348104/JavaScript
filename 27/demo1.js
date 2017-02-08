@@ -19,9 +19,17 @@ function removeEvent(obj,type,fn) {
         obj.detachEvent('on' + type, fn);
     }
 }
-addEvent(window, 'load', function () {
-    // var fm = document.getElementById('myform');
-    var fm = document.getElementsByTagName('form')[0];
-    alert(fm);
+ addEvent(window, 'load', function () {
+ // var fm = document.getElementById('myform');
+ var fm = document.getElementsByTagName('form')[0];
+ alert(fm);
 
-});*/
+ });*/
+addEvent(window, 'load', function () {
+    var fm = document.getElementById('myform');
+    var city = fm.elements['city'];
+    var info = fm.elements['into'];
+    addEvent(city, 'click', function () {
+        info.appendChild(this.options[city.selectedIndexindex]);
+    });
+});
