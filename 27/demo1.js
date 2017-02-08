@@ -2,6 +2,7 @@
  * Created by dell on 2017/2/7.
  */
 //跨浏览器添加事件
+/*
 function addEvent(obj,type,fn) {
     if (obj.addEventListener) {
         obj.addEventListener(type, fn,false);
@@ -23,4 +24,4 @@ addEvent(window, 'load', function () {
     var fm = document.getElementsByTagName('form')[0];
     alert(fm);
 
-});
+});*/
