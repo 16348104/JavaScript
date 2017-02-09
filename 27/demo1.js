@@ -32,7 +32,6 @@ function addEvent(obj,type,fn) {
     } else if(obj.attachEvent) {
         obj.attachEvent('on' + type, fn);
     }
-    
 }
 
 addEvent(window, 'load', function () {
