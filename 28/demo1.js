@@ -21,7 +21,7 @@ function box() {
 }
 box();*/
 try {
-    new 10;
+    //new 10;
 } catch (e) {
     if (e instanceof TypeError) {
         alert('错误类型：' + e.message);
