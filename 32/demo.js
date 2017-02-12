@@ -27,11 +27,17 @@
  "num" : 1
  }
  ]*/
-/*
- var json = '[{"title":"a","num":"1"},{"title":"b","num":"1"}]';
- //alert(typeof JSON);
- var box = JSON.parse(json);
- alert(box[0].title);*/
+
+var json = '[{"title":"a","num":"1"},{"title":"b","num":"5"}]';
+//alert(typeof JSON);
+var box = JSON.parse(json, function (key, val) {
+    if (key == 'num') {
+        return val + '岁';
+    } else {
+        return val;
+    }
+});
+alert(box[1].num);
 
 var box;
 box = [
@@ -47,7 +53,8 @@ box = [
         title: 'b',
         num: 1,
         height: 123,
-        toJSON: function () {                 toJSON//区分大小写
+        toJSON: function () {
+            toJSON//区分大小写
             return this.height;
         }
     }
@@ -62,5 +69,5 @@ box = [
  return v;
  }
  },4);*/
-var json = JSON.stringify(box, null, 4);
-alert(json);
+//var json = JSON.stringify(box, null, 4);
+//alert(json);
