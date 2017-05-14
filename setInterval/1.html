@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script>
-        var c = 10;
-        function update() {
-            if (c>=0) {
-                status = c--;
-            }
-
-        }
-    </script>
+    <script type="text/javascript"></script>
+    <!--<script>-->
+        <!--var c = 10;-->
+        <!--function update() {-->
+            <!--if (c>=0) {-->
+                <!--status = c&#45;&#45;;-->
+            <!--}-->
+        <!--}-->
+    <!--</script>-->
     <meta charset="UTF-8">
     <title>SET</title>
 </head>
 <body onload="setInterval('update()',1000);">
-<p onmouseover="status='网易云';">
-    段落
+
+<p onmouseover="status='网易云';" onmouseout="status='';">
+
+   一个段落
 </p>
 </body>
 </html>
