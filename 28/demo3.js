@@ -9,10 +9,6 @@ console.info('信息');
 console.warn('警告');*/
 
 
-
-
-
-
 var n1=1;
 console.log('n1=' + n1);
 var n2 = b;
