@@ -16,6 +16,8 @@
 </div>
 <textarea name="nrStr" id="nrStr" placeholder="限5000字符以内" rows="30" cols="80">
 </textarea>
+<audio src="VariousArtists.mp3" controls="controls" width="300"></audio>
+<video src="YouTube.mp4" controls="controls" width="300"></video>
 <iframe allow="20" id="ifr">
 
 </iframe>
@@ -28,7 +30,10 @@
     setTimeout(function () {
         alert("Hello");
     }, 3000);
-
+    var audio = document.getElementsByTagName('audio');
+    audio.play();
+    var video = document.getElementsByTagName('video');
+    video.play();
 </script>
 </body>
 </html>
