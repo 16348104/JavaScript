@@ -18,8 +18,14 @@
 </textarea>
 <iframe allow="20" id="ifr">
 </iframe>
+<div>
+<audio src="VariousArtists.mp3" controls="controls" width="300"></audio>
+<audio src="VariousArtists.mp3" controls="controls" width="300"></audio>
 <audio src="VariousArtists.mp3" controls="controls" width="300"></audio>
 <video src="YouTube.mp4" controls="controls" width="300"></video>
+<video src="YouTube.mp4" controls="controls" width="300"></video>
+<video src="YouTube.mp4" controls="controls" width="300"></video>
+</div>
 <script type="text/javascript">
     document.documentElement.scrollTop = 10000;  //将滚动条移动到页面的底部
     // document.documentElement.scrollTop=0  //将滚动条移动到页面的顶部
@@ -29,13 +35,18 @@
     // setTimeout(function () {
     //     alert("Hello");
     // }, 3000);
-    var audio = document.getElementsByTagName('audio')[0];
-    audio.play();
-    var video = document.getElementsByTagName('video')[0];
-    video.play();
+    var audio = document.getElementsByTagName('audio').length;
+    console.log('audio个数：',audio);
+    // alert(audio);
+    // audio.play();
+    var video = document.getElementsByTagName('video').length;
+    console.log('video个数：',video);
+    // alert(video);
+    // video.play();
     var b = document.getElementsByClassName('vjs-big-play-button')[0];
-    b.play();
+    // b.play();
     document.getElementsByClassName('playli')[0].scrollTop = 1000
+    document.getElementsByClassName('')
 </script>
 </body>
 </html>
