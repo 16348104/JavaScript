@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <title>Test</title>
 </head>
-
+    <body onresize="alert('/xss/')">
 <!--<input type="text" name="address1" value=""/>-->
-<script>alert(document.cookie)</script>
+<!--<script>alert(document.cookie)</script>-->
+<!--<script>alert('XSS')</script>-->
 <!--</!>-->
 <!--<input type="text" name="address1" value="" onfocus="alert(document.cookie)">-->
 <!--<a onpaste="alert(1)" contenteditable>test</a>-->
-<a onmouseover="alert('Hi')" contenteditable>test</a>
-<script type="text/javascript" >
-    window.alert("你好！");
-</script>
-
+<!--<a onmouseover="alert('Hi')" contenteditable>test</a>-->
+<!--<script>-->
+<!--    // window.alert("你好！");-->
+<!--    var a-->
+<!--        = 'XSS!';-->
+<!--    alert(a)-->
+<!--</script>-->
+<!--<a href="&#0000106avascript:alert('XSS!')">XSS</a>-->
+<!--<input type="button" value=“click” onclick="alert(/XSS/)">-->
+<script>alert(document.cookie)</script>
 </body>
 </html>
