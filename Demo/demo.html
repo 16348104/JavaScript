@@ -39,11 +39,12 @@
 <!--<script>eval('alert(/xss/)')</script>-->
 <!--<script>eval('\x61lert(1)')</script>-->
 <!--<script>eval("\x61\x6c\x65\x72\x74\x28\x27\x58\x53\x53\x27\x29")</script>-->
-<script>
-    var temp = document.URL;	// 获取URL
-    var index = document.URL.indexOf("content =") + 3;
-    var par = temp.substring(index);
-    document.write(decodeURI(par));	//输入获取内容
-</script>
+<script>console.log(123)</script>
+<!--<script>-->
+<!--    var temp = document.URL;	// 获取URL-->
+<!--    var index = document.URL.indexOf("content =") + 3;-->
+<!--    var par = temp.substring(index);-->
+<!--    document.write(decodeURI(par));	//输入获取内容-->
+<!--</script>-->
 </body>
 </html>
