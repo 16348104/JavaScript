@@ -8,7 +8,7 @@
 <body>
 <!--<a href="javascript:alert(1)">xss</a>-->
 <!--<A href='JavaScripT:alert(1)'>XSS</A>-->
-<!--<a href="javascript:alert(1)">xss</a>-->
+<a href="javascript:alert(1)">xss</a>
 <!--<div style="background-image:url(javascript:alert(a))">-->
 <!--    <style>-->
 <!--        Body{backgroung-image:url("javascript:alert(1)")}-->
@@ -22,7 +22,7 @@
 
 <!--<input type="text" name="address1" value=""/>-->
 <!-- <script>alert(document.cookie)</script>-->
-<!--<script>alert('XSS')</script>-->
+<script>alert('XSS')</script>
 <!--</!>-->
 <!--<input type="text" name="address1" value="" onfocus="alert(document.cookie)">-->
 <!--<a onpaste="alert(1)" contenteditable>test</a>-->
@@ -37,7 +37,7 @@
 <!--<script>alert(document.cookie)</script>-->
 <!--<script>\u0061lert(/XSS/)</script>-->
 <!--<script>eval('alert(/xss/)')</script>-->
-<!--<script>eval('\x61lert(1)')</script>-->
+<script>eval('\x61lert(1)')</script>
 <!--<script>eval("\x61\x6c\x65\x72\x74\x28\x27\x58\x53\x53\x27\x29")</script>-->
 <script>console.log(123)</script>
 <!--<script>-->
