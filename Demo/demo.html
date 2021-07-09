@@ -7,7 +7,7 @@
 <!--<body onresize="alert('/xss/')">-->
 <body>
 <!--<a href="javascript:alert(1)">xss</a>-->
-<!--<A href='JavaScripT:alert(1)'>XSS</A>-->
+<A href='JavaScripT:alert(1)'>XSS</A>
 <a href="javascript:alert(1)">xss</a>
 <!--<a onclick="alert('ymj')">xss</a>-->
 <!--<div style="background-image:url(javascript:alert(a))">-->
@@ -26,8 +26,8 @@
 <script>alert('XSS')</script>
 <!--</!>-->
 <!--<input type="text" name="address1" value="" onfocus="alert(document.cookie)">-->
-<!--<a onpaste="alert(1)" contenteditable>test</a>-->
-<!--<a onmouseover="alert('Hi')" contenteditable>test</a>-->
+<a onpaste="alert(1)" contenteditable>test</a>
+<a onmouseover="alert('Hi')" contenteditable>test</a>
 <!--<script>-->
 <!--    // window.alert("你好！");-->
 <!--    var a-->
